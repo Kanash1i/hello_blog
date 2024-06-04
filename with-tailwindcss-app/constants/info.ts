@@ -17,7 +17,7 @@ export const SOURCE_CODE_GITHUB_PAGE = 'https://github.com/Kanash1i/hello_blog';
 // export const BILIBILI_PAGE = 'https://space.bilibili.com/315542317';
 
 /** 网站名称 */
-export const WEBSITE = `${NICKNAME}`;
+export const WEBSITE = `${NICKNAME}`+'的图书馆';
 
 /** Slogan */
 export const SLOGAN = '不想上班';
