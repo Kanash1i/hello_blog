@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { useTranslation } from 'react-i18next';
 // import { Inter } from "next/font/google";
 import "./globals.css";
 
