@@ -6,6 +6,7 @@ import { buttonVariants } from '../ui/button';
 
 export type NextLinkProps = React.ComponentProps<typeof Link>;
 
+// 定义 NextLinkProps 类型，这是 TypeScript 语法，继承了 Link 组件的属性。
 export const NextLink = ({ className, children, ...props }: NextLinkProps) => {
   return (
     <Link

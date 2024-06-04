@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"); */
+@import "../node_modules/@fontsource/montserrat";
 html,
 body {
   padding: 0;
@@ -15,7 +15,7 @@ body:before {
   content: "";
   width: 100%;
   height: 100vh;
-  background-image: url("../../public/FoIlwebaQAIn565.jpg");
+  background-image: url("../public/FoIlwebaQAIn565.jpg");
   position: fixed;
   left: 0;
   top: 0;
@@ -55,3 +55,23 @@ a {
 * {
   box-sizing: border-box;
 }
+/* Color Theme Swatches in Hex */
+$Poseidon-1-hex: #012030;
+$Poseidon-2-hex: #13678a;
+$Poseidon-3-hex: #45c4b0;
+$Poseidon-4-hex: #9aeba3;
+$Poseidon-5-hex: #dafdba;
+
+/* Color Theme Swatches in RGBA */
+$Poseidon-1-rgba: rgba(0, 32, 48, 1);
+$Poseidon-2-rgba: rgba(18, 103, 138, 1);
+$Poseidon-3-rgba: rgba(68, 196, 175, 1);
+$Poseidon-4-rgba: rgba(153, 234, 162, 1);
+$Poseidon-5-rgba: rgba(217, 252, 186, 1);
+
+/* Color Theme Swatches in HSLA */
+$Poseidon-1-hsla: hsla(200, 96, 9, 1);
+$Poseidon-2-hsla: hsla(197, 76, 30, 1);
+$Poseidon-3-hsla: hsla(170, 52, 52, 1);
+$Poseidon-4-hsla: hsla(126, 66, 76, 1);
+$Poseidon-5-hsla: hsla(91, 94, 86, 1);
