@@ -15,8 +15,8 @@ import { navItems } from './config';
 import { MobileNav } from './mobile-nav';
 
 import { IconBarandGithub } from '../icons';
-import { Logo } from '../logo';
-import { ModeToggle } from '../mode-toggle';
+// import { Logo } from '../logo';
+// import { ModeToggle } from '../mode-toggle';
 import { NextLink } from '../next-link';
 import { Button } from '../ui/button';
 
@@ -37,7 +37,7 @@ export const Navbar = () => {
           className={cn('mr-4 hidden sm:flex')}
           aria-label={NICKNAME}
         >
-          <Logo />
+          {/* <Logo /> */}
           <span className="ml-2 font-semibold text-primary text-base">
             {WEBSITE}
           </span>
@@ -59,7 +59,7 @@ export const Navbar = () => {
         </div>
         <MobileNav />
         <div className="flex flex-1 sm:flex-none justify-end items-center gap-2">
-          <ModeToggle />
+          {/* <ModeToggle /> */}
           <Link
             href={SOURCE_CODE_GITHUB_PAGE}
             target="_blank"

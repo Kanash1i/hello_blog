@@ -101,7 +101,7 @@ export const HeroSection = () => {
           animationDelay: `${getDelay()}ms`,
         }}
       >
-        {socialMediaList.map((el) => (
+        {/* {socialMediaList.map((el) => (
           <li key={el.link}>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -114,7 +114,7 @@ export const HeroSection = () => {
               <TooltipContent>{el.label}</TooltipContent>
             </Tooltip>
           </li>
-        ))}
+        ))} */}
       </ul>
     </div>
   );
