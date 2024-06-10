@@ -6,13 +6,13 @@ import { TypeAnimation } from 'react-type-animation';
 export const TypeIntro = () => {
   return (
     <TypeAnimation
-      className="text-2xl md:text-5xl tracking-widest"
+      className="text-3xl md:text-5xl tracking-widest text-pink-300 font-bold "
       sequence={[
-        500,
-        '一名前端开发工程师 。',
         1000,
-        'A Web <Developer /> .',
-        1000,
+        '🌸宿命天成命中败🌸',
+        2000,
+        '🌸仙尊悔而我不悔🌸',
+     
       ]}
       speed={10}
       repeat={Infinity}

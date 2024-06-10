@@ -1,15 +1,15 @@
 import Link from 'next/link';
 
-import { Button, buttonVariants } from '../../../components/ui/button';
+import { Button, buttonVariants } from '@/components/ui/button';
 // import {
 //   Tooltip,
 //   TooltipContent,
 //   TooltipTrigger,
 // } from '../../../components/ui/tooltip';
 
-import { NICKNAME, PATHS } from '../../../constants';
+import { NICKNAME, PATHS } from '@/constants';
 import { TypeIntro } from './';
-import { cn } from '../../../lib/utils';
+import { cn } from '@/lib/utils';
 
 // import { socialMediaList } from './social-media';
 
@@ -22,17 +22,17 @@ export const HeroSection = () => {
   return (
     <div className="max-w-screen-md 2xl:max-w-7xl  gap-5 flex flex-col justify-center min-h-full px-6 md:px-10">
       <p
-        className="text-2xl md:text-5xl tracking-widest animate-fade-up animate-ease-in-out"
+        className="text-2xl md:text-5xl tracking-widest animate-fade-right animate-ease-in-out"
         style={{
           animationDelay: `${getDelay()}ms`,
         }}
       >
-        你好，我是
+       这里
       </p>
       <strong
         className={cn(
-          `text-5xl md:text-8xl tracking-widest font-black  bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500`,
-          'animate-fade-up animate-ease-in-out',
+          `text-5xl md:text-6xl tracking-widest font-black  bg-clip-text bg-gradient-to-r from-violet-400 to-blue-500`,
+          'animate-fade-left animate-ease-in-out',
         )}
         style={{
           WebkitTextFillColor: 'transparent',
@@ -41,6 +41,15 @@ export const HeroSection = () => {
       >
         {NICKNAME}
       </strong>
+      <p
+        className="text-2xl md:text-5xl tracking-widest animate-fade-right animate-ease-in-out"
+        style={{
+          animationDelay: `${getDelay()}ms`,
+        }}
+      >
+        の储物仓
+      </p>
+      
       <div
         className={cn('animate-fade-up animate-ease-in-out')}
         style={{
@@ -58,12 +67,24 @@ export const HeroSection = () => {
           animationDelay: `${getDelay()}ms`,
         }}
       >
-        喜欢
-        <span className={`font-semibold text-[#00d8ff]`}>React</span>、
-        <span className={`font-semibold text-[#007acc]`}>TypeScript</span>和
-        <span className={`font-semibold text-[#00b4e0]`}>Golang</span>
-        <span className="ml-4">\owo/ ~</span>
+        储藏一些
+        <span className={`font-semibold text-[#ddacf5]`}>技术备忘</span>、
+        <span className={`font-semibold text-[#64379f]`}>日常心得</span>和
+        <span className={`font-semibold text-[#ddacf5]`}>Gal评测(？</span>
       </p>
+
+      <p
+        className={cn(
+          'text-2xl md:text-5xl tracking-widest',
+          'animate-fade-down animate-ease-in-out',
+        )}
+        style={{
+          animationDelay: `${getDelay()}ms`,
+        }}
+      >
+        <span className="ml-4"> Ciallo, World!&#12316;&#40;&#8745;&#12539;&#969;&#60;&#41;&#65342;&#9733;</span>
+      </p>
+
       <p
         className={cn(
           'text-base md:text-2xl text-muted-foreground tracking-widest',

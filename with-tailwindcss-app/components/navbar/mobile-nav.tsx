@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 
 import { MenuIcon } from 'lucide-react';
 
-import { Button, buttonVariants } from '../../components/ui/button';
+import { Button, buttonVariants } from '@/components/ui/button';
 import {
   Sheet,
   SheetContent,
@@ -15,10 +15,10 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from '../../components/ui/sheet';
+} from '@/components/ui/sheet';
 
-import { SLOGAN, WEBSITE } from '../../constants';
-import { cn } from '../../lib/utils';
+import { SLOGAN, WEBSITE } from '@/constants';
+import { cn } from '@/lib/utils';
 import { navItems } from './config';
 
 export const MobileNav = () => {

@@ -3,7 +3,7 @@
 // import { type Prisma } from '@prisma/client';
 import { isUndefined } from 'lodash-es';
 
-import { ERROR_NO_PERMISSION } from '../../../constants';
+import { ERROR_NO_PERMISSION } from '@/constants';
 // import { batchGetBlogUV } from '@/features/statistics';
 // import { noPermission } from '@/features/user';
 // import { prisma } from '@/lib/prisma';

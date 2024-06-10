@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { MoveLeft } from 'lucide-react';
 
-import { BytemdViewer } from '@/components/bytemd';
+// import { BytemdViewer } from '@/components/bytemd';
 import { DetailSidebar } from '@/components/detail-sidebar';
 import { MarkdownTOC } from '@/components/markdown-toc';
 import { Wrapper } from '@/components/wrapper';
