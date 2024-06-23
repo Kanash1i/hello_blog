@@ -15,7 +15,8 @@ import { navItems } from './config';
 import { MobileNav } from './mobile-nav';
 
 import { IconBarandGithub } from '../icons';
-// import { Logo } from '../logo';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHelicopterSymbol} from '@fortawesome/free-solid-svg-icons';
 // import { ModeToggle } from '../mode-toggle';
 import { NextLink } from '../next-link';
 import { Button } from '../ui/button';
@@ -32,16 +33,19 @@ export const Navbar = () => {
       )}
     >
       <div className="w-full flex items-center h-16 p-4 sm:p-8 md:max-w-screen-md 2xl:max-w-screen-xl">
+        {/* navbar左半边 */}
         <NextLink
           href={PATHS.SITE_HOME}
           className={cn('mr-4 hidden sm:flex')}
           aria-label={NICKNAME}
         >
-          {/* <Logo /> */}
+          <FontAwesomeIcon icon={faHelicopterSymbol} className={cn('w-8 h-8 hidden dark:block')} />
           <span className="ml-2 font-semibold text-primary text-base">
             {WEBSITE}
           </span>
         </NextLink>
+
+        {/* navbar右半边文字 */}
         <div className="h-16 flex-1 hidden sm:flex justify-end items-center text-base font-medium mr-8">
           {navItems.map((el) => (
             <Link
@@ -57,7 +61,9 @@ export const Navbar = () => {
             </Link>
           ))}
         </div>
+        {/* 移动navbar */}
         <MobileNav />
+        {/* 右边图标部分 */}
         <div className="flex flex-1 sm:flex-none justify-end items-center gap-2">
           {/* <ModeToggle /> */}
           <Link

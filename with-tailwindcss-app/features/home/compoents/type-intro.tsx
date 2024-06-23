@@ -8,14 +8,11 @@ export const TypeIntro = () => {
     <TypeAnimation
       className="text-3xl md:text-5xl tracking-widest text-pink-300 font-bold "
       sequence={[
-        1000,
-        '🌸宿命天成命中败🌸',
-        2000,
-        '🌸仙尊悔而我不悔🌸',
-     
+        500,
+        '🌸欢迎光临🌸',
       ]}
       speed={10}
-      repeat={Infinity}
+      // repeat={Infinity}
     />
   );
 };
