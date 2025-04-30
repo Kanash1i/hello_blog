@@ -17,5 +17,3 @@ yarn create next-app --tailwind with-tailwindcss-app
 ```bash
 pnpm create next-app --tailwind with-tailwindcss-app
 ```
-
-哭了
